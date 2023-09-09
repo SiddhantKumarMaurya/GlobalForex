@@ -1,0 +1,132 @@
+/* Styling for the Footer section */
+.footer-section {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color */
+    padding: 50px 0; /* Vertical and horizontal padding */
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .footer-heading {
+    font-size: 24px; /* Heading font size */
+  }
+  
+  .footer-description {
+    font-size: 16px; /* Description font size */
+    margin-top: 10px;
+  }
+  
+  .footer-links {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links .footer-heading {
+    font-size: 24px; /* Heading font size */
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-list a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-list a:hover {
+    color: #007bff; /* Link color on hover */
+  }
+  
+  .footer-contact {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact .footer-heading {
+    font-size: 24px; /* Heading font size */
+  }
+  
+  .footer-address {
+    font-size: 16px; /* Address font size */
+    margin-top: 10px;
+  }
+  
+  .footer-social {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .footer-social .footer-heading {
+    font-size: 24px; /* Heading font size */
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px; /* Social media icon size */
+    color: #fff; /* Icon color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Icon color on hover */
+  }
+  
+  /* Styling for the Footer bottom section */
+  .footer-bottom {
+    background-color: #222; /* Footer bottom background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px; /* Text font size */
+  }
+  
+  .footer-bottom a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

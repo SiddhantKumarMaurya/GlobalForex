@@ -1,0 +1,57 @@
+/* Styling for the Home section */
+.home-section {
+    background-color: #a5d3f3; /* Background color for the section */
+    color: #fff; /* Text color */
+    padding: 100px 0; /* Vertical and horizontal padding */
+    text-align: center;
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .home-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .home-heading {
+    font-size: 48px; /* Heading font size */
+    margin-bottom: 20px;
+  }
+  
+  .home-description {
+    font-size: 24px; /* Description text font size */
+    margin-bottom: 30px;
+  }
+  
+  .home-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1770b0; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #e6451f; /* Button color on hover */
+  }
+  
+  .home-image {
+    flex: 1;
+  }
+  
+  .hero-image {
+    max-width: 100%; /* Make sure the image fits within its container */
+    /* border-radius: 10px; /* Rounded image corners */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); Add a subtle shadow to the image */
+  }
+  

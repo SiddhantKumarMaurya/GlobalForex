@@ -1,0 +1,86 @@
+/* Styling for the About section */
+.about-section {
+  background-color: #e1ecf4; /* Background color for the section */
+  color: #333; /* Text color */
+  padding: 100px 0; /* Vertical and horizontal padding */
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-heading {
+  font-size: 48px; /* Heading font size */
+  margin-bottom: 20px;
+  color: #07acdf; /* Heading color */
+}
+
+.about-description {
+  font-size: 24px; /* Description text font size */
+  margin-bottom: 30px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1770b0; /* Button background color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #e6451f; /* Button color on hover */
+}
+
+.about-image {
+  flex: 1;
+}
+
+.profile-image {
+  max-width: 100%; /* Make sure the image fits within its container */
+  border-radius: 10px; /* Rounded image corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the image */
+}
+
+/* Styling for the About section footer */
+.about-footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Footer text color */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center;
+}
+
+.about-footer p {
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px; /* Social media icon size */
+  color: #fff; /* Icon color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff; /* Icon color on hover */
+}

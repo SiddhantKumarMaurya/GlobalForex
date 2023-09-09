@@ -1,0 +1,48 @@
+/* Basic styles for the navigation bar */
+nav {
+  position: fixed; /* Fixed position to keep the navbar always on the page */
+  top: 0; /* Stick it to the top of the viewport */
+  left: 0; /* Stick it to the left of the viewport */
+  right: 0; /* Stick it to the right of the viewport */
+  background-color: #e8f4fc; /* Background color for the navbar */
+  color: #fff; /* Text color for the links */
+  padding: 10px 0; /* Vertical and horizontal padding */
+  border: 2px solid #e8f4fc;
+  border-radius: 0px;
+  box-shadow: 0 8px 6px rgba(7, 20, 117, 0.762);
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: space-between; /* Space evenly between items */
+  align-items: center; /* Vertically center the items */
+}
+
+/* Style for the navigation links */
+nav ul {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Display links horizontally */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+nav li {
+  margin: 0 10px; /* Add spacing between links */
+}
+
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #07acdf; /* Text color for links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+
+  /* Optional: Add a subtle hover effect */
+  &:hover {
+    color: #ff5733; /* Change color on hover */
+  }
+}
+
+h2 {
+  color: #046b8b; /* Set color for "Global Forex" */
+  margin-top: 10%; /* Remove margin to avoid spacing */
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
