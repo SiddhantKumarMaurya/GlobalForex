@@ -1,51 +1,64 @@
-import React from 'react';
-import "./navbar.css"
-const NavBar = () => {
+import React, { useState, useEffect } from 'react';
+import './navbar.css';
+
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Toggle menu
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleMenuItemClick = () => {
+    setMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const checkWindowWidth = () => {
+      // Adjust the breakpoint as needed
+      setMenuOpen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', checkWindowWidth);
+    checkWindowWidth();
+
+    return () => {
+      window.removeEventListener('resize', checkWindowWidth);
+    };
+  }, []);
+
   return (
-    <nav>
-      <div className="left">
-        <ul>
-          <li>
-            <a href="/">
-              <h2>Global Forex</h2>
-            </a>
-          </li>
-        </ul>
+    <nav className={`navbar ${menuOpen ? 'menu-open' : ''}`}>
+      <div className="navbar-container">
+        <div className="left-section">
+          <h1 className="logo">
+            <a className="logo-link" href="/">Global Forex</a>
+          </h1>
         </div>
-        <div className="right">
-        <ul>
-          <li>
-            <a href="#home">
-              <h4>
-                Home
-              </h4>
-              </a>
-          </li>
-          <li>
-            <a href="#about">
-              <h4>
-                About
-              </h4>
-              </a>
-          </li>
-          <li>
-            <a href="#portfolio">
-              <h4>
-                Portfolio
-              </h4>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <h4>
-                Contact
-              </h4>
-            </a>
-          </li>
-        </ul>
+        <div className="right-section">
+            <div className={`menu-button ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+              <li>
+                <a href="#home" onClick={handleMenuItemClick}>Home</a>
+              </li>
+              <li>
+                <a href="#about" onClick={handleMenuItemClick}>About</a>
+              </li>
+              <li>
+                <a href="#portfolio" onClick={handleMenuItemClick}>Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact" onClick={handleMenuItemClick}>Contact</a>
+              </li>
+            </ul>  
+        </div> 
       </div>
     </nav>
   );
-};
+}
 
-export default NavBar;
+export default Navbar;
