@@ -14,14 +14,15 @@ body {
   top:0;
   left:0;
   background-color: #fffdf3;
-  color: #07acdf;
-  padding: 10px 0;
-  border: 2px solid #fffdf3;
+  /* color: #07acdf; */
+  /* padding: 10px 0; */
+  /* border: 2px solid #fffdf3; */
   border-radius: 0;
-  box-shadow: 0 4px 6px #fffdf3;
+  /* box-shadow: 0 4px 6px #fffdf3; */
   display: flexbox;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999; /* To prevent the contents of other componets from overlapping with navabar when scrolled*/
 }
 
 .navbar-container {
@@ -44,15 +45,11 @@ body {
   color: #61a3b9;
   margin-left: 20px;
   margin-right:10px;
+  margin-top: 0px;
   font-size: 24px;
   font-weight: bold;
-
-  /* Add a border to "Global Forex" */
-  border: 2px solid #61a3b9; /* Border color */
-  padding: 10px 20px; /* Padding to create space around text */
-  border-radius: 10px; /* Rounded corners for a modern look */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-  transition: border-color 0.3s ease; /* Smooth transition on hover */
+  width: 100px;
+  height: 102px;
 }
 
 /* Change border color on hover for an interactive effect */
@@ -75,7 +72,7 @@ body {
 .menu-button span {
   width: 30px;
   height: 3px;
-  background-color: #07acdf;
+  background-color: #5cb94e;
   margin: 3px 0;
   transition: transform 0.2s ease;
 }
@@ -106,10 +103,10 @@ body {
 .nav-links a {
   text-decoration:solid;
   font-weight: bold;
-  color: #07acdf;
+  color: #92cf8c;
   /* transition: color 0.3s ease; */
   padding: 10px 20px;
-  border: 2px solid #07acdf; /* Add a transparent border initially */
+  border: 2px solid #92cf8c; /* Add a transparent border initially */
   border-radius: 10px; /* Rounded corners for links */
   margin: 0 10px; /* Adjust spacing between links */
   transition: border-color 0.3s ease; /* Smooth transition on hover */
@@ -117,11 +114,11 @@ body {
 
 /* Change border color on hover for an interactive effect */
 .nav-links a:hover {
-  border-color: #ff5733; /* Change border color on hover */
+  border-color: #5cb94e; /* Change border color on hover */
 }
 
 .nav-links a:hover {
-  color: #ff5733;
+  color: #5cb94e;
 }
 
 /* Media query for mobile menu */
@@ -166,7 +163,7 @@ body {
 
   .nav-links a {
     text-decoration: none;
-    color: #07acdf;
+    color: #5cb94e;
     font-weight: bold;
     padding: 10px 20px;
     border: 2px solid transparent;

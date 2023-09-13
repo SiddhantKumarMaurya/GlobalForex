@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import GlobalForex from "./GlobalForex.png"
 import './navbar.css';
 
 function Navbar() {
@@ -32,6 +33,15 @@ function Navbar() {
       <div className="navbar-container">
         <div className="left-section">
           <h1 className="logo">
+            <a className="logo-link" href="/">
+              <img
+                src={GlobalForex}
+                alt="Hero Image"
+                className="hero-image"
+              />
+              </a>
+          </h1>
+          <h1 className="navbar-title">
             <a className="logo-link" href="/">Global Forex</a>
           </h1>
         </div>

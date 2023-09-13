@@ -14,7 +14,7 @@ const About = () => {
             The foreign exchange (forex or FX) market is a global marketplace for exchanging national currencies. Because of the worldwide reach of trade, commerce, and finance, forex markets tend to be the world's largest and most liquid asset markets. Currencies trade against each other as exchange rate pairs.
           </p>
           <a href="#contact" className="about-button">
-            Get in Touch
+            Contact Us
           </a>
         </div>
         <div className="about-image">

@@ -23,7 +23,7 @@
 .about-heading {
   font-size: 48px; /* Heading font size */
   margin-bottom: 20px;
-  color: #07acdf; /* Heading color */
+  color: #5cb94e; /* Heading color */
 }
 
 .about-description {
@@ -34,7 +34,7 @@
 .about-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #1770b0; /* Button background color */
+  background-color: #5cb94e; /* Button background color */
   color: #fff; /* Button text color */
   text-decoration: none;
   font-weight: bold;
@@ -43,7 +43,7 @@
 }
 
 .about-button:hover {
-  background-color: #e6451f; /* Button color on hover */
+  background-color: #3d9c38; /* Button color on hover */
 }
 
 .about-image {

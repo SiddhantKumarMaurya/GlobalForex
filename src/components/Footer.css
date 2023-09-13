@@ -129,4 +129,8 @@
   .footer-bottom a:hover {
     text-decoration: underline; /* Underline on hover */
   }
+
+  .footer-image {
+    height: 250px;
+  }
   

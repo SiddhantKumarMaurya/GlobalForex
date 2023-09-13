@@ -5,11 +5,10 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="contact-heading">Get in Touch</h2>
+        <h2 className="contact-heading">Contact Us</h2>
         <div className="contact-content">
           <p className="contact-description">
-            Have a project in mind or just want to say hello? Feel free to
-            reach out to me!
+            Contact details
           </p>
           <div className="contact-info">
             <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>

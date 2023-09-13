@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
+import GlobalForex from "./GlobalForex.png"
 
 const Footer = () => {
   return (
@@ -7,9 +8,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-logo">
-            <h2 className="footer-heading">Your Logo</h2>
+            <h2 className="footer-heading">
+              <img src={GlobalForex} alt="Global Forex" className="footer-image"/></h2>
             <p className="footer-description">
-              We create beautiful and functional websites.
+              Exchange foreing money with us.
             </p>
           </div>
           <div className="footer-links">
@@ -38,7 +40,7 @@ const Footer = () => {
             </address>
           </div>
         </div>
-        <div className="footer-social">
+        {/* <div className="footer-social">
           <h3 className="footer-heading">Follow Us</h3>
           <div className="social-links">
             <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
@@ -51,11 +53,11 @@ const Footer = () => {
               <i className="fab fa-instagram"></i>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Global Forex. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
