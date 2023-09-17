@@ -73,7 +73,7 @@ body {
 .menu-button span {
   width: 30px;
   height: 3px;
-  background-color: #5cb94e;
+  background-color: #064153;
   margin: 3px 0;
   transition: transform 0.2s ease;
 }
@@ -104,10 +104,10 @@ body {
 .nav-links a {
   text-decoration:solid;
   font-weight: bold;
-  color: #92cf8c;
+  color: #085e79;
   /* transition: color 0.3s ease; */
   padding: 10px 20px;
-  border: 2px solid #92cf8c; /* Add a transparent border initially */
+  border: 2px solid #085e79; /* Add a transparent border initially */
   border-radius: 10px; /* Rounded corners for links */
   margin: 0 10px; /* Adjust spacing between links */
   transition: border-color 0.3s ease; /* Smooth transition on hover */
@@ -115,11 +115,11 @@ body {
 
 /* Change border color on hover for an interactive effect */
 .nav-links a:hover {
-  border-color: #5cb94e; /* Change border color on hover */
+  border-color: #021920; /* Change border color on hover */
 }
 
 .nav-links a:hover {
-  color: #5cb94e;
+  color: #021920;
 }
 
 /* Media query for mobile menu */

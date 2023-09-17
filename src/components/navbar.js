@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import GlobalForex from "./GlobalForex.png"
 import './navbar.css';
 
 function Navbar() {
@@ -33,25 +32,25 @@ function Navbar() {
       <div className="navbar-container">
         <div className="left-section">
           <h1 className="logo">
-            <a className="logo-link" href="/">
+            <a className="logo-link" href="#home">
               <img
-                src={GlobalForex}
-                alt="Hero Image"
+                src="./images/GlobalForex.png"
+                alt="Global Forex"
                 className="hero-image"
               />
               </a>
           </h1>
           <h1 className="navbar-title">
-            <a className="logo-link" href="/">Global Forex</a>
+            <a className="logo-link" href="#home">Global Forex</a>
           </h1>
         </div>
         <div className="right-section">
-            <div className={`menu-button ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+            <div className={`menu-button ${menuOpen ? '' : 'active'}`} onClick={toggleMenu}>
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+            <ul className={`nav-links ${menuOpen ? '' : 'open'}`}>
               <li>
                 <a href="#home" onClick={handleMenuItemClick}>Home</a>
               </li>

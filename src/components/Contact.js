@@ -1,80 +1,90 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Contact.css'; // Import the CSS file
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      phoneNumber: '',
-      message: '',
+
+  const ContactUs = () => {
+
+    const [formState, setFormState] = useState({});
+
+    const config = {
+      Username: 'globalforex2023@gmail.com',
+      Password: 'C6E9BFD9CFC1C50A60961D27A83124BBB9F4',
+      Host: 'smtp.elasticemail.com',
+      Port: 2525,
+      To : 'them@website.com',
+      From : "you@isp.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"
     };
-  }
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
-  }
+    const changeHandler = (event) => {
+      setFormState({...formState, [event.target.name]: event.target.value})
+    }
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form data submitted:', this.state);
-    // Reset the form fields if needed
-    this.setState({
-      name: '',
-      email: '',
-      phoneNumber: '',
-      message: '',
-    });
-  }
+    const submitHandler = () => {
+      
+      const config = {
+        Username: 'globalforex2023@gmail.com',
+        Password: 'C6E9BFD9CFC1C50A60961D27A83124BBB9F4',
+        Host: 'smtp.elasticemail.com',
+        Port: 2525,
+        To : 'globalforex2023@gmail.com',
+        From : formState.email,
+        Subject : "This is from my contact from",
+        Body : `${formState.message} 
+                Phone Number:  ${formState.phoneNumber}`,
+      };
 
-  render() {
+
+      if(window.Email) {
+        window.Email.send(config);
+      }
+      
+    }
     return (
       <div id='contact' className="contact-container">
         <h1>Get In Touch</h1>
-        <form onSubmit={this.handleSubmit} className="contact-form">
-          <div className="form-group fa-heart">
-            <label htmlFor="name">Name:</label>
+        <form onSubmit={submitHandler} className="contact-form">
+          <div className="form-group">
+            <label htmlFor="name">Name <i className="fa fa-user fa-bounce"></i></label>
             <input
               type="text"
               id="name"
               name="name"
-              value={this.state.name}
-              onChange={this.handleChange}
+              value={formState.name}
+              onChange={changeHandler}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email Address:</label>
+            <label htmlFor="email">Email Address <i className="fa-solid fa-envelope fa-bounce"></i></label>
             <input
               type="email"
               id="email"
               name="email"
-              value={this.state.email}
-              onChange={this.handleChange}
+              value={formState.email}
+              onChange={changeHandler}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="phoneNumber">Phone Number:</label>
+            <label htmlFor="phoneNumber">Phone Number <i className="fa-solid fa-phone fa-bounce"></i></label>
             <input
               type="tel"
               id="phoneNumber"
               name="phoneNumber"
-              value={this.state.phoneNumber}
-              onChange={this.handleChange}
+              value={formState.phoneNumber}
+              onChange={changeHandler}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">Message <i className="fa-solid fa-message fa-bounce"></i></label>
             <textarea
               id="message"
               name="message"
-              value={this.state.message}
-              onChange={this.handleChange}
+              value={formState.message}
+              onChange={changeHandler}
               required
             />
           </div>
@@ -85,7 +95,6 @@ class Contact extends Component {
       </div>
     );
   }
-}
 
-export default Contact;
+export default ContactUs;
 

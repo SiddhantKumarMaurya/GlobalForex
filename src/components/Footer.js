@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css'; // Import the CSS file for styling
-import GlobalForex from "./GlobalForex.png"
 
 const Footer = () => {
   return (
@@ -9,9 +8,9 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <h2 className="footer-heading">
-              <img src={GlobalForex} alt="Global Forex" className="footer-image"/></h2>
+              <img src="./images/GlobalForex.png" alt="Global Forex" className="footer-image"/></h2>
             <p className="footer-description">
-              Exchange foreing money with us.
+              Exchange foreign money with us.
             </p>
           </div>
           <div className="footer-links">
