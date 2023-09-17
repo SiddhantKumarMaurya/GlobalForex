@@ -59,8 +59,9 @@ body {
 
 .logo-link {
   text-decoration: none;
-  color:#046b8b;
+  color:#064153;
   font-weight: bold;
+  /* font-size: 30px; */
 }
 
 .menu-button {

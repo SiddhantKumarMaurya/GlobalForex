@@ -7,14 +7,10 @@ const Home = () => {
     <section id="home" className="home-section">
       <div className="home-content">
         <div className="home-text">
-          <h1 className="home-heading">Welcome to Our Portfolio</h1>
+          <h1 className="home-heading">Welcome to Global Forex</h1>
           <p className="home-description">
-            Explore Our work, skills, and experiences. Feel free to reach out if
-            you have any questions.
+          "Unlock the World's Wealth: Exchange Anytime, Anywhere!"
           </p>
-          <a href="#portfolio" className="home-button">
-            View Portfolio
-          </a>
         </div>
         <div className="home-image">
           <img

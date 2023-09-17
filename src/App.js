@@ -24,11 +24,9 @@ function App() {
       ) : (
         <div>
           <NavBar/>
-        <Home/>
-        <About/>
-        <Portfolio/>
-        <Contact/>
-        <Footer/>
+          <Home/>
+          <Contact/>
+          <Footer/>
         </div>
       )}
     </div>

@@ -21,13 +21,15 @@
   }
   
   .home-heading {
-    font-size: 48px; /* Heading font size */
+    font-size: 50px; /* Heading font size */
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
   }
   
   .home-description {
-    font-size: 24px; /* Description text font size */
+    font-size: 22px; /* Description text font size */
     margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
   }
   
   .home-button {

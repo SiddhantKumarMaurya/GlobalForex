@@ -56,12 +56,6 @@ function Navbar() {
                 <a href="#home" onClick={handleMenuItemClick}>Home</a>
               </li>
               <li>
-                <a href="#about" onClick={handleMenuItemClick}>About</a>
-              </li>
-              <li>
-                <a href="#portfolio" onClick={handleMenuItemClick}>Portfolio</a>
-              </li>
-              <li>
                 <a href="#contact" onClick={handleMenuItemClick}>Contact</a>
               </li>
             </ul>  

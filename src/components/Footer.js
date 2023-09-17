@@ -20,23 +20,18 @@ const Footer = () => {
               <li>
                 <a href="#home">Home</a>
               </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
+              
               <li>
                 <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
           <div className="footer-contact">
-            <h3 className="footer-heading">Contact Us</h3>
+            <h3 className="footer-heading">Our Contact</h3>
             <address className="footer-address">
-              <p>123 Main St, City, Country</p>
-              <p>Email: your.email@example.com</p>
-              <p>Phone: +1 (123) 456-7890</p>
+              <p>Address: Desighnarch E Home Shop No. GF OIV , Opposit Zeta 1, Surajpur Sitr-C , Greater Noida -201308</p>
+              <p>Email: globalforex2023@gmail.com</p>
+              <p>Phone: 7982911121 , 9667460610</p>
             </address>
           </div>
         </div>

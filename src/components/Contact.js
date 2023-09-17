@@ -1,35 +1,91 @@
-import React from 'react';
-import './Contact.css'; // Import the CSS file for styling
+import React, { Component } from 'react';
+import './Contact.css'; // Import the CSS file
 
-const Contact = () => {
-  return (
-    <section id="contact" className="contact-section">
-      <div className="container">
-        <h2 className="contact-heading">Contact Us</h2>
-        <div className="contact-content">
-          <p className="contact-description">
-            Contact details
-          </p>
-          <div className="contact-info">
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>Phone: +1 (123) 456-7890</p>
-            <p>Address: 123 Main St, City, Country</p>
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      phoneNumber: '',
+      message: '',
+    };
+  }
+
+  handleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form data submitted:', this.state);
+    // Reset the form fields if needed
+    this.setState({
+      name: '',
+      email: '',
+      phoneNumber: '',
+      message: '',
+    });
+  }
+
+  render() {
+    return (
+      <div id='contact' className="contact-container">
+        <h1>Get In Touch</h1>
+        <form onSubmit={this.handleSubmit} className="contact-form">
+          <div className="form-group fa-heart">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
+              required
+            />
           </div>
-          <div className="social-links">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+          <div className="form-group">
+            <label htmlFor="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={this.state.email}
+              onChange={this.handleChange}
+              required
+            />
           </div>
-        </div>
+          <div className="form-group">
+            <label htmlFor="phoneNumber">Phone Number:</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              value={this.state.phoneNumber}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={this.state.message}
+              onChange={this.handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <button type="submit" className="submit-button">Submit</button>
+          </div>
+        </form>
       </div>
-    </section>
-  );
-};
+    );
+  }
+}
 
 export default Contact;
+
